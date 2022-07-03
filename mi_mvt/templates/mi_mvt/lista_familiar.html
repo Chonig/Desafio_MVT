@@ -7,12 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get">
-        <label for="Nombre">Cual es tu nombre? </label>
-        <input type="text" name="nombre">
-        <button type="submit">enviar</button>
-    </form>
-
-    <h2> hola como estas:{{nombre}}</h2>
+    {% for i in familiares %}
+        <li>{{i.nombre}},{{i.apellido}},{{i.edad}}</li>
+    {% endfor %}
 </body>
 </html>
