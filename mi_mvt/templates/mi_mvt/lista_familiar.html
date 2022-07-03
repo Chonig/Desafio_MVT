@@ -10,8 +10,8 @@
     
     {% for i in familiares %}
         <br><li><label for={{i.nombre}}>Nombre: </label>{{i.nombre}}</li>
-        <br><li><label for={{i.apellido}}>Apellido: </label>{{i.apellido}},</li>
-        <br><li><label for={{i.edad}}>Edad: </label>{{i.edad}}</li>
+        <li><label for={{i.apellido}}>Apellido: </label>{{i.apellido}}</li>
+        <li><label for={{i.edad}}>Edad: </label>{{i.edad}}</li>
         
     {% endfor %}
 </body>
