@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    
     {% for i in familiares %}
-        <li>{{i.nombre}},{{i.apellido}},{{i.edad}}</li>
+        <br><li><label for={{i.nombre}}>Nombre: </label>{{i.nombre}}</li>
+        <br><li><label for={{i.apellido}}>Apellido: </label>{{i.apellido}},</li>
+        <br><li><label for={{i.edad}}>Edad: </label>{{i.edad}}</li>
+        
     {% endfor %}
 </body>
 </html>
