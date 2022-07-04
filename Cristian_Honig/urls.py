@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mi_mvt.views import *
+from nueva_app.views import mostrar_home, mostrar_profile
 
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
     path('saludo_prueba/', prueba),
     path('listar_familiar/', info_familiar),
+    path('home/', mostrar_home),
+    path('profile/',mostrar_profile),
 ]

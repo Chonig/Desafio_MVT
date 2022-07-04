@@ -1,3 +1,4 @@
 from django.contrib import admin
+from mi_mvt.models import *
 
-# Register your models here.
+admin.site.register(Familiares)
